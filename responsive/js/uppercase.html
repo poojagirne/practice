@@ -1,0 +1,40 @@
+<!---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       let res=""; 
+    let str="hello how are you";
+    let array=str.split(' ');
+    //first letter uppercase of every word
+    array.forEach(element => {
+    res+=element[0].toUpperCase()+element.slice(1)+" ";
+    });
+    console.log(res)
+
+//alternative letter to upper case
+
+    var alternative= function(str)
+    {
+    let res=str.toLowerCase().split('');
+   
+        for(let i=0;i<res.length;i+=2)
+        {
+            res[i]=res[i].toUpperCase();
+
+        }
+        return res.join('');
+    }
+    console.log(alternative(str));
+    console.log(str);
+
+
+   </script>
+</body>
+</html>

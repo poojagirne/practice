@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //without using recursion
+          let num=5;
+        let fact=1;
+        if(num===0)
+        {
+            console.log(`factorial ${num} of no is 1`)
+        }
+        else
+        {
+            for(let i=1;i<= num;i++)
+        {
+            fact*=i;
+
+            console.log(fact)
+        }
+        }
+     //useing recursion 
+
+     function factrioal(n)
+     {
+        if(n==0)
+        {
+            return 1;
+        }
+        else{
+            return n*factrioal(n-1);
+        }
+     } 
+     const n = prompt('Enter a positive number: ');
+
+// calling factorial() if num is positive
+if (n >= 0) {
+const result = factrioal(n);
+console.log(`The factorial of ${n} is ${result}`);
+}
+else {
+console.log('Enter a positive number.');
+}
+
+    </script>
+</body>
+</html>
