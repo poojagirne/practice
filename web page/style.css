@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#logo img{
+    height:100px ;
+    width:100px ;
+}
+#navbar{
+    display: flex;
+    top: 0px;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul{
+    display: flex;
+  
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px 22px;
+    color:white;
+    border-radius: 20px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    padding: 30px 200px; 
+    height: 430px;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+   content: "";
+   background : url('../strobery.jpg') no-repeat center;
+   position: absolute;
+   top: 0px;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.7;
+
+}
+.h-primary{
+    font-size: 40px;
+    padding: 12px;
+    text-align: center;
+}
+#h-second{
+    font-size: 40px;
+    padding: 12px;
+    margin: 20px auto;
+    text-align: center;
+}
+#home p{
+    color: black;
+    font-family:'baloo bhai',cursive;
+}
+.btn{
+    border: 2px solid white;
+    margin: 17px;
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+.btn:hover{
+background-color: blueviolet;
+}
+#services{
+    text-align: center;
+    display: flex;
+    margin:  20px 6px;
+
+}
+.box{
+    margin: 2px 15px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: rgb(146, 235, 238);
+    border: 2px solid red;
+}
+.first{
+    text-align: center;
+}
+.client-section{
+    position: relative;
+
+}
+.client-items{
+    padding: 34px;
+}
+#client img{
+    height: 120px;
+}
+#client{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.client-section::before{
+    content: "";
+    background: url('jpg.jpg')no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: 107%;
+    z-index: -1;
+    opacity: 0.7;
+ }
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    background: url('p1.jpg')no-repeat center;  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box input,#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-action{
+padding: 2px;
+margin: 10px;
+text-align: center;
+margin:  20px 100px;
+
+}
+footer{
+background: black;
+color: white;
+padding:9px 20px;
+text-align: center;
+
+}
